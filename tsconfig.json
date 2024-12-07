@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext", 
+    "moduleResolution":"node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "api/auth/otp/sendSMSOTP/sms.ts", "api/auth/otp/sendEmailOTP/email.ts", "api/comments/commentController.ts", "api/notifications/notifications.mjs", "api/chats/chats.mjs", "app/components0/videoControl.tsx", "settings.js"],
+  "exclude": ["node_modules"]
+}
